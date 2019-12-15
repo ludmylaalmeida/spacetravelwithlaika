@@ -1,0 +1,392 @@
+html{
+
+   background: url("../images/space2.jpg") center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  margin: 0%;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+.pink-planet{
+  width: 30%;
+  height: auto;
+  margin-right: 70%;
+  left: 50px;
+  z-index: -1;
+  position: absolute;
+}
+
+.pink-planet , .first{
+    top: 1700px;
+
+}
+
+.first{
+  display: inline;
+}
+
+.purple-planet{
+  background: url("../images/purple-planet.png") center center no-repeat;
+  background-size: contain;
+  width: 55%;
+  height: 50%;
+  left: -100px;
+  z-index: -1;
+  position: absolute;
+}
+
+.saturn{
+  width: 300px;
+  height: 300px;
+  background: url("../images/saturn.png") center center no-repeat;
+  padding: 20px 20px 20px 20px;
+  margin-left: 5%;
+  left: 50px;
+  z-index: -1;
+  position: absolute;
+  -webkit-animation: rotation 10s linear infinite;
+  -moz-animation: rotation 10s linear infinite;
+  animation: rotation 10s linear infinite;
+  transform-origin: 50% 50%;
+}
+
+#animate2{
+  align-items: center;
+  position: fixed;
+  top: 200px;
+  height: auto;
+  z-index: 11;
+  display: none;
+}
+
+.left{
+    margin-top: 30%;
+    text-align: left;
+    width: 25%;
+    height: auto;
+    color: white;
+    z-index: 2;
+    position: absolute;
+    margin-left: 100px;
+}
+
+.right{
+    margin-top: 45px;
+    text-align: right;
+    width: 20%;
+    height: 30%;
+    float: right;
+    color: white;
+    z-index: 2;
+    position: absolute;
+    margin-left: 100px;
+    padding-top: 20px;
+    margin-left: 70%;
+}
+
+html, body{
+  height: 100%;
+  max-height: 100%;
+  max-width: 100%;
+}
+  
+body{
+  font-family: 'Arima Madurai', cursive;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+/*  letter-spacing: 2px;
+  font-style: italic;*/
+}
+
+section{ 
+  display: flex;
+  height: 100vh;
+  background-image: url("../images/bg_overlay.png");
+}
+
+.intro{
+  justify-content: center;
+  background: url("../images/LOGO-INTRO.png") center center no-repeat;
+  background-size: contain;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.arrow{
+  bottom: 0;  
+  position: absolute;
+  left: 50%;
+  margin-left: -20px;
+  color: white;
+  width: 40px;
+  height: 60px;
+  -moz-animation: zoomInDown 2s;
+  -webkit-animation: zoomInDown 2s;
+  animation: zoomInDown 2s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+  
+
+@keyframes soar{
+
+  50% {
+      transform: translate(0, -7px);
+  }
+
+}
+
+.soaring {
+    animation-name: soar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-name: soar;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: soar;
+    -moz-animation-duration: 4s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+    z-index: 30;
+}
+
+.laika{
+  position: relative;
+  width: 30%;
+  height: auto;
+  margin-left: 35%;
+}
+
+.moon{
+  position: absolute;
+  background-attachment: fixed;
+  width: 1280px;
+  height: 305px;
+  background-size: contain;
+  background: url("../images/moon.png") center center no-repeat;
+  overflow-x: hidden;
+  bottom: 0px;
+
+}
+
+#bluePlanet {
+  float: right;
+  position: relative;
+  background: url("../images/blueplanet.png") center center no-repeat;
+  background-size: contain;
+  width: 400px;
+  height: auto;
+  left: 60%;
+
+
+}
+
+.floating{
+  animation-name: floating;
+  -webkit-animation-name: floating;
+
+  animation-duration: 3s; 
+  -webkit-animation-duration: 3s;
+
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0%);  
+  }
+  50% {
+    transform: translateY(8%);  
+  } 
+  100% {
+    transform: translateY(0%);
+  }     
+}
+
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: translateY(0%);  
+  }
+  50% {
+    -webkit-transform: translateY(8%);  
+  } 
+  100% {
+    -webkit-transform: translateY(0%);
+  }     
+}
+
+.nebula{
+  background: url("../images/nebula.png") no-repeat;
+  background-size: contain;
+  width: 900px;
+  height: 900px;
+  margin:  100px;
+  opacity: 0.5;
+  -webkit-animation:spin 20s linear infinite;
+  -moz-animation:spin 20s linear infinite;
+  animation:spin 20s linear infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes spin { 
+  100% { -webkit-transform: rotate(360deg); 
+  transform:rotate(360deg); } 
+}
+
+footer{
+    position: relative;
+    height: 600px;
+    overflow-y: hidden;
+}
+
+/*nav {
+    position: fixed;
+    bottom: 0px;
+    right: 50px;
+    z-index: 1000;
+}
+
+nav ul {
+    position: relative;
+    list-style: none;
+    bottom: 200px;
+}
+
+nav ul li {
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    line-height: 0.7em;
+    margin-bottom: 32px;
+    background-size: contain;
+    border: 1px solid white;
+}
+
+nav ul li a {
+    display: none;
+    position: absolute;
+    right: 40px;
+    text-decoration: none
+}
+
+
+li a:hover {
+    background-color: purple;
+    color: white;
+}
+*/
+
+.asteroids{
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-animation: asteroid 30s linear infinite;
+  -moz-animation: asteroid 30s linear infinite;
+  animation: asteroid 30s linear infinite;
+  z-index: 3;
+}
+
+@keyframes asteroid {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.rings{
+  background: url("../images/saturn_rings_middle.SVG");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 2;
+  width: 100%;
+  padding-bottom: 100%; 
+  z-index: -1;
+  display: flex;
+
+}
+
+.field{
+  background: url("../images/asteroid_field.png");
+  width: 100%;
+  display: flex;
+}
+
+.cloud1{
+  background-size: contain;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+  position: absolute;
+  opacity: 0.6;
+
+}
+
+.cloud2{
+  background-size: contain;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  opacity: 0.5;
+
+}
+
+.clouds{
+  background: url("../images/clouds.png");
+  background-size: contain;
+  width: 1280px;
+  height: 600px;
+  z-index: -1;
+  position: absolute;
+  opacity: 0.8;
+  bottom: -100px;
+
+}
+
+.moving {
+    animation-name: moving;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moving{
+
+  50% {
+      transform: translate(0, 10px);
+  }
+
+}
+.backtotop {
+    position: fixed;
+    display: block;
+    right: 0.5em;
+    bottom: 0.5em;
+    display: none;
+    color: white;
+    text-decoration: none;
+    z-index: 9999;
+}
