@@ -7,3 +7,7 @@ https://ludmylaalmeida.github.io/spacetravelwithlaika/index.html" target="_blank
 ![demo](https://github.com/ludmylaalmeida/spacetravelwithlaika/blob/master/screen2.png?raw=true)
 ![demo](https://github.com/ludmylaalmeida/spacetravelwithlaika/blob/master/laika.gif?raw=true)
 
+## 🚨 Forking this repo
+
+<p>This code cannot be used for college assignments. I value keeping this code on github as part of my portfolio, but as you all know, <b>plagiarism is bad</b>. I spent a non-negligible amount of effort developing and designing this project and I am proud of it! All I ask is to not claim this effort as your own.</p>
+
