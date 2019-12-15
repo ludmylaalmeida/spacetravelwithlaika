@@ -3,4 +3,7 @@ https://ludmylaalmeida.github.io/spacetravelwithlaika/index.html" target="_blank
 
 <p>This was my final project for the General Assembly class <a href="https://generalassemb.ly/education/front-end-web-development" target="_blank">Front-End Web Development</a> taken in 2016</p>
 
+![demo](https://github.com/ludmylaalmeida/spacetravelwithlaika/blob/master/screen1.png?raw=true)
+![demo](https://github.com/ludmylaalmeida/spacetravelwithlaika/blob/master/screen2.png?raw=true)
 ![demo](https://github.com/ludmylaalmeida/spacetravelwithlaika/blob/master/laika.gif?raw=true)
+
